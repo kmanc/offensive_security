@@ -16,3 +16,6 @@
 [submodule "scripts/enumeration/privilege-escalation-awesome-scripts-suite"]
 	path = scripts/enumeration/peas
 	url = git@github.com:carlospolop/privilege-escalation-awesome-scripts-suite.git
+[submodule "scripts/discovery/intelligent_machine_discovery"]
+	path = scripts/discovery/imd
+	url = git@github.com:kmanc/intelligent_machine_discovery.git
