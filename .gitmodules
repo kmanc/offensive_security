@@ -7,9 +7,6 @@
 [submodule "scripts/enumeration/LinEnum"]
 	path = scripts/enumeration/LinEnum
 	url = git@github.com:rebootuser/LinEnum.git
-[submodule "scripts/access/AutoBlue-MS17-010"]
-	path = scripts/access/autoblue
-	url = git@github.com:3ndG4me/AutoBlue-MS17-010.git
 [submodule "scripts/privesc/juicy-potato"]
 	path = scripts/privesc/juicy-potato
 	url = git@github.com:ohpe/juicy-potato.git
