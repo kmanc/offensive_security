@@ -1,3 +1,11 @@
+# [aureport](https://linux.die.net/man/8/aureport):
+#### `aureport --tty | grep su`
+#### `aureport --tty | grep sudo`
+  * -tty reports on tty keystrokes - think hands on shell
+  * -l reports on logins
+  * -n reports on anomaly events
+  * -r reports on responses to anomalies
+
 # [fgdump](https://web.archive.org/web/20191115054845/https://www.aldeid.com/wiki/FGDump):
 #### `fgdump.exe`
 #### `fgdump.exe -h X.X.X.X -l <file>`
