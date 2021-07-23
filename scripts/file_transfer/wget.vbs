@@ -1,5 +1,5 @@
 strUrl = WScript.Arguments.Item(0)
-StrFile = WScript.Arguments.Item(1)
+strFile = WScript.Arguments.Item(1)
 Const HTTPREQUEST_PROXYSETTING_DEFAULT = 0
 Const HTTPREQUEST_PROXYSETTING_PRECONFIG = 0
 Const HTTPREQUEST_PROXYSETTING_DIRECT = 1
@@ -16,7 +16,7 @@ http.Send
 varByteArray = http.ResponseBody
 Set http = Nothing
 Set fs = CreateObject("Scripting.FileSystemObject")
-Set ts = fs.CreateTextFile(StrFile, True)
+Set ts = fs.CreateTextFile(strFile, True)
 strData = ""
 strBuffer = ""
 For lngCounter = 0 to UBound(varByteArray)

