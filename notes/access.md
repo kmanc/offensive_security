@@ -47,7 +47,11 @@
   * -p is the source port
   * -n prevents DNS lookups on addresses, hostnames, and ports
   
-
+# [netsh](https://docs.microsoft.com/en-us/windows-server/networking/technologies/netsh/netsh-contexts):
+#### `netsh interface portproxy add v4tov4 listenport=YYY listenaddress=X.X.X.X connectport=BBB connectaddress=A.A.A.A`
+#### `netsh advfirewall firewall add rule name="rule_name" protocol=TCP dir=in localip=X.X.X.X localport=YYY action=allow`  
+  * Above interface command creates a listener on X.X.X.X:YYY that forwards to A.A.A.A:BBB
+  * Above advfirewall command creates a firewall rule that allows inbound traffic to X.X.X.X:YYY
 
 # [proxychains](https://www.unix.com/man-page/debian/1/proxychains/):
 #### `cat /etc/proxychains.conf`
