@@ -22,3 +22,6 @@
 [submodule "scripts/enumeration/PowerSploit"]
 	path = scripts/enumeration/PowerSploit
 	url = https://github.com/PowerShellMafia/PowerSploit
+[submodule "scripts/privesc/mimikatz"]
+	path = scripts/privesc/mimikatz
+	url = https://github.com/gentilkiwi/mimikatz
