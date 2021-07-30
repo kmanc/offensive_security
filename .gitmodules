@@ -19,3 +19,6 @@
 [submodule "scripts/access/AutoBlue-MS17-010"]
 	path = scripts/access/AutoBlue-MS17-010
 	url = https://github.com/3ndG4me/AutoBlue-MS17-010.git
+[submodule "scripts/enumeration/PowerSploit"]
+	path = scripts/enumeration/PowerSploit
+	url = https://github.com/PowerShellMafia/PowerSploit
