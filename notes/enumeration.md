@@ -24,6 +24,12 @@
 #### `locate ssh`
   * run `updatedb` to make sure locate is working with the most current data
 
+# [net.exe](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc771865(v=ws.11)):
+#### `net user`
+#### `net user /domain`
+#### `net user username /domain`
+#### `net group /domain`
+
 # [netstat](https://linux.die.net/man/8/netstat):
 #### `netstat antp`
 #### `netstat nao`
