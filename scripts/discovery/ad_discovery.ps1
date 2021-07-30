@@ -40,3 +40,16 @@ Foreach($obj in $Result)
     $obj.Properties.member
 }
 #>
+
+# To get all instances of a service
+<#
+$searcher.filter = "serviceprincipalname=*service(like http)*"
+$Result = $searcher.FindAll()
+Foreach($obj in $Result)
+{
+    Foreach($prop in $obj.Properties)
+    {
+        $prop
+    }
+}
+#>
