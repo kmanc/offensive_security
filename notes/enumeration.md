@@ -20,6 +20,10 @@
   * searches the given path (recursively) for what you entered
   * the last example finds SUID files, which can sometimes be used for privilege escalation
 
+# [klist](https://linux.die.net/man/1/klist):
+#### `klist`
+  * Shows caches Kerberos tickets for the current user
+
 # [locate](https://linux.die.net/man/1/locate):
 #### `locate ssh`
   * run `updatedb` to make sure locate is working with the most current data
@@ -29,6 +33,7 @@
 #### `net user /domain`
 #### `net user username /domain`
 #### `net group /domain`
+#### `net accounts`
 
 # [netstat](https://linux.die.net/man/8/netstat):
 #### `netstat antp`
