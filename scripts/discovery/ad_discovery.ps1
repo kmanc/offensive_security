@@ -53,3 +53,6 @@ Foreach($obj in $Result)
     }
 }
 #>
+
+# To test a password for a user
+# New-Object System.DirectoryServices.DirectoryEntry($searchString, "username", "password")
