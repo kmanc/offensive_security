@@ -25,3 +25,12 @@
 [submodule "scripts/privesc/mimikatz"]
 	path = scripts/privesc/mimikatz
 	url = https://github.com/gentilkiwi/mimikatz
+[submodule "scripts/enumeration/jaws"]
+	path = scripts/enumeration/jaws
+	url = https://github.com/411Hall/JAWS
+[submodule "scripts/enumeration/Bloodhound"]
+	path = scripts/enumeration/Bloodhound
+	url = https://github.com/BloodHoundAD/BloodHound
+[submodule "scripts/enumeration/cme"]
+	path = scripts/enumeration/cme
+	url = https://github.com/byt3bl33d3r/CrackMapExec
