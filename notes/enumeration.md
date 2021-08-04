@@ -6,6 +6,17 @@
   * -n reports on anomaly events
   * -r reports on responses to anomalies
 
+# [BloodHound](https://github.com/BloodHoundAD/BloodHound):
+#### `sudo neo4j console`
+#### `BloodHound`
+#### `bloodhound-python -u username -p password -ns X.X.X.X -c all`
+  * Start up neo4j
+  * Run BloodHound (I moved mine to /usr/local/bin/BloodHound then added that to my path)
+  * Run the bloodhound-python command from the Kali machine with the ns option being a DC
+  * Alternatively you can maybe run on the victim machine if you can get around AMSI
+  * Move the JSON files to the BloodHound UI
+
+
 # [fgdump](https://web.archive.org/web/20191115054845/https://www.aldeid.com/wiki/FGDump):
 #### `fgdump.exe`
 #### `fgdump.exe -h X.X.X.X -l <file>`
