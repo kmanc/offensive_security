@@ -34,3 +34,6 @@
 [submodule "scripts/enumeration/cme"]
 	path = scripts/enumeration/cme
 	url = https://github.com/byt3bl33d3r/CrackMapExec
+[submodule "scripts/access/evil-winrm"]
+	path = scripts/access/evil-winrm
+	url = https://github.com/Hackplayers/evil-winrm
