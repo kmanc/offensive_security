@@ -1,6 +1,8 @@
 # [proxychains](https://web.archive.org/web/20191115232017/https://www.linuxbabe.com/desktop-linux/how-to-use-proxychains-to-redirect-your-traffic-through-proxy-server):
 #### `proxychains <command you would have run>`
   * configuration is done in `/etc/proxychains.conf`
+  * Add a line at the end of the form `socks5 X.X.X.X YYY`
+    * For chaining with an SSH tunnel make the IP 127.0.0.1 and the port whatever port you used in the tunnel
   
 # [rinetd](https://web.archive.org/web/20191202033419/http://man.docs.sk/8/rinetd.html):
   * port forwarding tool whose configuration is done in `/etc/rinetd.conf`

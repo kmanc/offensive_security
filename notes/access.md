@@ -98,6 +98,7 @@
   * -R binds a remote server's (X.X.X.X) port (YYY) to the local server's (A.A.A.A) port (BBB) using the remote server's credentials
   * -D specifies a local dynamic application-level port forwarder for tunneling
     * In this case it will forward any traffic to local port YYY to any host on X.X.X.X's network through it's SSH connection
+    * Pair this with Proxychains (see [proxies.md](https://github.com/kmanc/offensive_security/blob/master/notes/proxies.md)) for pivoting around a compromised network
   * -N supresses the shell that usually results from SSH
   * -L sets up local port forwarding
     * In this case it forwards X.X.X.X port YYY to A.A.A.A port BBB through an SSH connection on F.F.F.F
