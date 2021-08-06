@@ -16,10 +16,13 @@
 
 # [hashcat](https://tools.kali.org/password-attacks/hashcat):
 #### `hashcat -m 110 <hash_file> <wordlist_file> --force`
-#### `hashcat -m <1000/5500/5600> -a 3 <hash_file>`
+#### `hashcat -m <1000/5500/5600> -a 0 <hash_file> <wordlist_file> -O`
   * -m specifies hash type; see the man page for reference
+    * 1000 for NTLM, 5500 for Net-NTLMv1, 5600 for Net-NTLMv2
   * --force ignores warnings
-  * 1000 for NTLM, 5500 for Net-NTLMv1, 5600 for Net-NTLMv2
+  * -a specifies attack type; see the man page for reference
+    * 0 for wordlist, 3 for brute force
+  * cached results are in `~/.hashcat/hashcat.potfile`
 
 # [hydra](https://tools.kali.org/password-attacks/hydra):
 #### `hydra -l <username> -P <hash_file> -t 10 ssh://X.X.X.X`
