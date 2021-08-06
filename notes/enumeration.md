@@ -31,6 +31,13 @@
   * searches the given path (recursively) for what you entered
   * the last example finds SUID files, which can sometimes be used for privilege escalation
 
+# [Internal-Monologue](https://github.com/eladshamir/Internal-Monologue):
+#### `Internal-Monolgue.exe`
+#### `msbuild InternalMonologue.sln -p:TargetFrameworkVersion=v4.5`
+  * Saved as a submodule in [enumeration](https://github.com/kmanc/offensive_security/tree/master/scripts/enumeration), this can capture hashes from Windows machines
+  * Run from an [evil-winrm shell](https://github.com/kmanc/offensive_security/blob/master/notes/access.md#evil-winrm) for results
+  * Make sure to build with a .Net Framework that is on the target machine, as shown in the example 
+
 # [klist](https://linux.die.net/man/1/klist):
 #### `klist`
   * Shows caches Kerberos tickets for the current user
