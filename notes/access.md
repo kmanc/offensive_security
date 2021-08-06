@@ -93,6 +93,7 @@
 # [ssh](https://linux.die.net/man/1/ssh):
 #### `plink <username>@X.X.X.X`
 #### `ssh <username>@X.X.X.X`
+#### `ssh -i ~/.ssh/keyfile username@X.X.X.X`
   * Establishes secure shell on the remote host with the provided username and password
   * -i specifies a key file to instead of a password
   * -p defines a port to connect to in the case on non-standard ssh ports
