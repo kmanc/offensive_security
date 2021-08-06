@@ -12,7 +12,7 @@
 #### `ssh -fN -D YYY user@X.X.X.X`
 #### `ssh -L BBB:A.A.A.A:YYY user@X.X.X.X`
 #### `ssh -R YYY:A.A.A.A:BBB user@X.X.X.X`
-  * Note, *by far* the easiest way to do ssh tunneling is going to be with `-D`
+  * Note, **by far** the easiest way to do ssh tunneling is going to be with `-D`
   * -D defines the local port (YYY) to use for communication to the remote (X.X.X.X) server's port (ZZZ)
   * -N tells SSH not to execute a remote command making it good for forwarding things
   * -f requires -N and tells SSH to run in the background once all authorization stuff has happened so it's perfect for setting up tunnels
