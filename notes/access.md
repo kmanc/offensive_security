@@ -91,20 +91,12 @@
   * --os-shell tries to get an interactive shell
 
 # [ssh](https://linux.die.net/man/1/ssh):
-#### `plink -l <username> -pw <password> X.X.X.X -R YYY:A.A.A.A:BBB`
-#### `ssh -N -D YYY <username>@X.X.X.X`
-#### `ssh -N -L X.X.X.X:YYY:A.A.A.A:BBB user@F.F.F.F`
-#### `ssh -N -R X.X.X.X:YYY:A.A.A.A:BBB user@X.X.X.X`
-  * -R binds a remote server's (X.X.X.X) port (YYY) to the local server's (A.A.A.A) port (BBB) using the remote server's credentials
-  * -D specifies a local dynamic application-level port forwarder for tunneling
-    * In this case it will forward any traffic to local port YYY to any host on X.X.X.X's network through it's SSH connection
-    * Pair this with Proxychains (see [proxies.md](https://github.com/kmanc/offensive_security/blob/master/notes/proxies.md)) for pivoting around a compromised network
-  * -N supresses the shell that usually results from SSH
-  * -L sets up local port forwarding
-    * In this case it forwards X.X.X.X port YYY to A.A.A.A port BBB through an SSH connection on F.F.F.F
-  * -R sets up remote port forwarding
-    * In this case it forwards X.X.X.X port YYY to A.A.A.A port BBB through an SSH connection on X.X.X.X
-  
+#### `plink <username>@X.X.X.X`
+#### `ssh <username>@X.X.X.X`
+  * Establishes secure shell on the remote host with the provided username and password
+  * -i specifies a key file to instead of a password
+  * -p defines a port to connect to in the case on non-standard ssh ports
+  * See pairing with [tunneling flags](https://github.com/kmanc/offensive_security/blob/master/notes/proxies.md#ssh) and Proxychains [proxies.md](https://github.com/kmanc/offensive_security/blob/master/notes/proxies.md#proxychains) for pivoting around a compromised network
 
 # [telnet](https://linux.die.net/man/1/telnet):
 #### `nc -nlvp YYY`
