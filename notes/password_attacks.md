@@ -2,6 +2,9 @@
 #### `cewl <website.com> -m 6 -w <hash_file>`
   * -m sets the minimum word length
   * -w writes to a file
+  
+# [crack.sh](https://crack.sh/get-cracking/):
+  * very interesting website that offers cracking services for DES, Windows, and WPA hashes
 
 # [crunch](https://tools.kali.org/password-attacks/crunch):
 #### `crunch 6 6 0123456879abcdef -o <hash_file>`

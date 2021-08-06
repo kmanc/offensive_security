@@ -40,3 +40,6 @@
 [submodule "scripts/access/impacket"]
 	path = scripts/access/impacket
 	url = https://github.com/SecureAuthCorp/impacket
+[submodule "scripts/enumeration/Internal-Monologue"]
+	path = scripts/enumeration/Internal-Monologue
+	url = https://github.com/eladshamir/Internal-Monologue
