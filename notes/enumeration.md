@@ -12,10 +12,10 @@
 #### `bloodhound-python -u username -p password -ns X.X.X.X -c all`
   * Start up neo4j
   * Run BloodHound (I moved mine to /usr/local/bin/BloodHound then added that to my path)
-  * Run the bloodhound-python command from the Kali machine with the ns option being a DC
+  * Run the bloodhound-python command from the Kali machine with the ns option being a DC (assuming you installed with `pip3 install bloodhound`)
+    * Bonus with this method is you can proxychain it too
   * Alternatively you can maybe run on the victim machine if you can get around AMSI
   * Move the JSON files to the BloodHound UI
-
 
 # [fgdump](https://web.archive.org/web/20191115054845/https://www.aldeid.com/wiki/FGDump):
 #### `fgdump.exe`
