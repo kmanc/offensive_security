@@ -68,3 +68,13 @@ $vp=[System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer((Fin
 ```
 $va.Invoke($funcAddr, 3, 0x20, [ref]$oldProtectionBuffer)
 ```
+
+## [Sleep](https://docs.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-sleep):
+
+```
+$slp = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer((FindFunc kernel32.dll Sleep), (getDelegateType @([UInt32]) ([UInt32])))
+```
+
+```
+$slp.Invoke(2000);
+```
