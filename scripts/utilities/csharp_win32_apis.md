@@ -219,6 +219,21 @@ if(mem == null)
 }
 ```
 
+## [FlsAlloc](https://docs.microsoft.com/en-us/windows/win32/api/fibersapi/nf-fibersapi-flsalloc):
+
+```
+[DllImport("kernel32.dll", SetLastError = true, ExactSpelling = true)]
+static extern IntPtr FlsAlloc(IntPtr callback);
+```
+
+```
+IntPtr index = FlsAlloc(IntPtr.Zero)
+if(index.ToInt32() < 0)
+{
+ return;
+}
+```
+
 ## [InternetOpen](https://docs.microsoft.com/en-us/windows/win32/api/wininet/nf-wininet-internetopena):
 
 ```
