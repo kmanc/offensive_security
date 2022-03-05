@@ -43,3 +43,6 @@
 [submodule "scripts/enumeration/Internal-Monologue"]
 	path = scripts/enumeration/Internal-Monologue
 	url = https://github.com/eladshamir/Internal-Monologue
+[submodule "scripts/access/remote_code_oxidation"]
+	path = scripts/access/remote_code_oxidation
+	url = git@github.com:kmanc/remote_code_oxidation.git
